@@ -1,6 +1,10 @@
-name: Post Welcome comment
+name: Post welcome comment
 on:
   pull_request:
     types: [opened]
 permissions: 
-  pupull-requests: write
+  pull-requests: write
+jobs:
+  welcome:
+    name: Post welcome comment
+    runruns-on: ubuntu-latest
